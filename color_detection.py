@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 import imutils
 from google.colab.patches import cv2_imshow
 
-clusters = 20 # try changing it
+clusters = 20 # we can change it to increase number of colors detected
 
 img = cv2.imread('/content/colorpic.jpg')
 org_img = img.copy()
@@ -74,8 +74,8 @@ for i in range(5):
 
 plt.show()
 cv2_imshow(img)
-#img = cv2.imread('img',final)
-#cv2_imshow(img)
+img = cv2.imread('img',final)
+cv2_imshow(img)
 #cv2.imshow('img',final)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
